@@ -1,0 +1,14 @@
+name: xe-daemon
+container:
+  entrypoint: ./sbin/xe-daemon
+  mounts:
+    - source: /dev/xen/xenbus
+      destination: /dev/xen/xenbus
+      type: bind
+      options:
+        - bind
+        - rshared
+  security:
+    writeableRootfs: true
+    writeableSysfs: true
+restart: always

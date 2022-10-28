@@ -1,0 +1,10 @@
+version: v1alpha1
+metadata:
+  name: xe-daemon
+  version: 7.30.0-8.2
+  author: Bruno Briante
+  description: |
+    XenServer guest utilities for unix-like operating systems
+  compatibility:
+    talos:
+      version: ">= v1.2.0"
